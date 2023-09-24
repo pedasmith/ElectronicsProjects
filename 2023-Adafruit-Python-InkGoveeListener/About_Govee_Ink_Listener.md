@@ -1,5 +1,7 @@
 # Govee Ink Display
 
+![Disassembled project](./Govee-EInk-Display-Image.jpg)
+
 The Govee Ink Display shows the temperature and humidity from a Govee Bluetooth 5074 sensor on a small e-ink dispkay. 
 
 The hardware is an AdaFruit nrf52840 Feather connected to a 2.13 inch tri-color e-ink FeatherWing display, run either from a small battery or from a USB-C connection (thanks to the built-in USB/battery charge circuity). The case is milled from a small block of plastic. There's a small switch on the side to turn the device on and off. When turned on it will initialize the real-time clock and user preferences for the time display and temperature from a local Bluetooth Current Time Service. 
@@ -11,7 +13,7 @@ The purpose of the display is to act as a mini weather station: a person from th
 1. DONE Switch the Govee to use the new mini-time slice approach
 2. DONE Hook up the BT annunciator
 3. DONE Finish the holder + re-mill if desired. Add a switch.
-4. IP What's the power consumption in the different modes?
+4. DONE What's the power consumption in the different modes?
 
 
 
@@ -129,7 +131,7 @@ Without doing any special work, the power used by the device is about 2.1 mA. Mo
 
 
 
-### Raw data: Power and voltage measurements 
+### Power and voltage measurements 
 
 To get a good long life out of this device, I need to be able to measure its actual power usage. I use current flow as a proxy for the power draw because my power source is fairly constant.
 
@@ -177,7 +179,15 @@ Other components: a small switch, a block of plastic from which I milled out spa
 
 ## Blog posts, youtube videos, PRs
 
-Code PRs:
+### Blogs:
+
+1. Update old clock blog with link to github
+
+
+[Code on Github](https://github.com/pedasmith/ElectronicsProjects/tree/main/2023-Adafruit-Python-InkGoveeListener)
+
+
+### Code PRs:
 1. Incorrect numerical value for sleep 120, not 180
 2. Should use the time_to_refresh from the adafruit_ssd1680.SSD1680
 
